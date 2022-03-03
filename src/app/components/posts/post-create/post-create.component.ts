@@ -15,6 +15,7 @@ export class PostCreateComponent {
         if(form.invalid) return
         const { title, description, body } = form.value
         this.postService.addPost(title, description, body)
+        form.resetForm()
     }
 
 }
