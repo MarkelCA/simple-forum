@@ -16,12 +16,13 @@ import { PostListComponent } from '../components/posts/post-list/post-list.compo
 import {MatExpansionModule} from '@angular/material/expansion';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
-    PostListComponent
+    PostListComponent,
   ],
   imports: [
     BrowserModule,
