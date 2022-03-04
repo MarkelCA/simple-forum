@@ -1,17 +1,16 @@
 <mat-accordion class="accordion" multi="true" *ngIf="posts.length > 0">
   <mat-expansion-panel *ngFor="let post of posts">
     <mat-action-row>
-        <button mat-button color="primary">{{ "edit" | uppercase }}</button>
-        <button mat-button color="warning">{{ "delete" | uppercase }}</button>
+        <button mat-button color="primary">EDIT</button>
+        <button (click)="deleteEvent(post.id)" mat-button color="warning">DELETE</button>
     </mat-action-row>
     <mat-expansion-panel-header>
       <mat-panel-title>
-          <p>{{ post.title }}</p>    
+          <p>{{ post.title }}</p>
       </mat-panel-title>
       <mat-panel-description>
           {{ post.description }}
           <button class="userButton" mat-button (click)="$event.stopPropagation();"><mat-icon>account_circle</mat-icon></button>
-        
       </mat-panel-description>
     </mat-expansion-panel-header>
         <p>{{ post.body }}</p>
