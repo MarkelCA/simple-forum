@@ -15,7 +15,25 @@ mat-expansion-panel-header .mat-content {
     align-items: center;
 }
 
-.userButton {
-    position: relative;
-    left: 10px;
+.accordion * {
+  overflow: hidden;
 }
+
+@media screen and (max-width: 350px) {
+  .accordion * {
+    overflow: hidden;
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1px !important;
+  }
+  mat-expansion-panel:not(.userButton) {
+    font-size: .9em !important;
+  }
+
+  mat-panel-description {
+    font-size: x-small !important;
+  }
+}
+

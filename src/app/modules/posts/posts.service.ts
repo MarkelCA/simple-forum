@@ -19,7 +19,7 @@ export class PostService {
     }]
     private postsUpdated = new Subject<Post[]>()
 
-    getPosts() { 
+    getPosts() {
         // We use the spread operator to make a copy of posts instead of passing the reference
         // so it won't be affected on modifications
         return [...this.posts]
@@ -35,7 +35,7 @@ export class PostService {
         this.postsUpdated.next([...this.posts])
     }
 
-    setPosts(posts: Post[]) { 
+    setPosts(posts: Post[]) {
         this.posts = posts
     }
 
