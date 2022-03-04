@@ -7,7 +7,7 @@ export class PostService {
     private posts: Post[] = [{
         id : 1,
         title : "Sunt aut facere",
-        description : "Repellat provident occaecati excepturi optio reprehenderit",
+        description : "Repellat provident occaecati excepturi",
         body : "Quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut quas totam nostrum rerum est autem sunt rem eveniet architecto."
     },{
         id : 2,
@@ -17,7 +17,7 @@ export class PostService {
     }, {
         id : 3,
         title : "Ea molestias quasi exercitationem",
-        description : "Rullam et saepe reiciendis voluptatem adipisci sit",
+        description : "Rullam et saepe reiciendis voluptatem ad",
         body : "Delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus accusamus in eum beatae sit vel qui neque voluptates ut commodi qui incidunt ut animi commodi."
     }]
     private postsUpdated = new Subject<Post[]>()
@@ -33,7 +33,7 @@ export class PostService {
     }
 
     addPost(title: string, description: string, body: string) {
-        const lastId : number = this.posts[ this.posts.length - 1].id
+        const lastId : number = this.posts[ this.posts.length - 1]?.id ?? 1
         const post : Post = {id: lastId, title: title, description: description, body: body}
         this.posts.push(post)
         this.postsUpdated.next([...this.posts])

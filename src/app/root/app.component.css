@@ -1,5 +1,8 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind screens;
+@tailwind components;
+
 main {
-    margin-top: 1em;
-    width: 80%;
-    margin: auto;
+  min-width: 240px;
 }

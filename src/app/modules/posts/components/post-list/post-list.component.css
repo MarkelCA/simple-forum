@@ -1,3 +1,8 @@
+@tailwind components;
+@tailwind screens;
+@tailwind utilities;
+@tailwind base;
+
 .info-text {
     text-align: center;
 }
@@ -19,21 +24,13 @@ mat-expansion-panel-header .mat-content {
   overflow: hidden;
 }
 
-@media screen and (max-width: 350px) {
-  .accordion * {
-    overflow: hidden;
-    font-size: 1rem;
+@media screen and (max-width: 640px) {
+  mat-expansion-panel-header {
+    padding: 3em 1em;
   }
-
-  button {
-    font-size: 1px !important;
-  }
-  mat-expansion-panel:not(.userButton) {
-    font-size: .9em !important;
-  }
-
-  mat-panel-description {
-    font-size: x-small !important;
+  * {
+    font-size: small;
   }
 }
+
 

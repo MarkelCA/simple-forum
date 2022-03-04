@@ -2,12 +2,12 @@
     <mat-card>
         <mat-form-field>
             <mat-label>Title:</mat-label>
-            <input type="text" name="title" matInput ngModel #title="ngModel" required minlength="3" maxlength="20"/>
+            <input type="text" name="title" matInput ngModel #title="ngModel" required minlength="3" maxlength="35"/>
             <mat-error *ngIf="title.invalid">Enter a valid title.</mat-error>
         </mat-form-field>
         <mat-form-field>
             <mat-label>Description:</mat-label>
-            <input type="text" name="description" maxlength="50" matInput ngModel />
+            <input type="text" name="description" maxlength="40" matInput ngModel />
         </mat-form-field>
         <mat-form-field>
             <mat-label>Post:</mat-label>
