@@ -4,6 +4,7 @@ import {PostListComponent} from "./components/post-list/post-list.component";
 import {MaterialModule} from "../material/material.module";
 import { FormsModule } from '@angular/forms';
 import {CommonModule} from "@angular/common";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {CommonModule} from "@angular/common";
   imports: [
     MaterialModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ]
 })
 export class PostsModule {}
