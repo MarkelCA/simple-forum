@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from '../components/header/header.component'
 import {MaterialModule} from '../modules/material/material.module';
 import {PostsModule} from "../modules/posts/posts.module";
+import {NoticiasModule} from '../modules/noticias/noticias.module';
 
 
 
@@ -18,8 +19,8 @@ import {PostsModule} from "../modules/posts/posts.module";
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    PostsModule
-
+    PostsModule,
+    NoticiasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
