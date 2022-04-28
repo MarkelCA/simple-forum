@@ -1,0 +1,19 @@
+<mat-accordion class="accordion" multi="true" *ngIf="noticias.length > 0" >
+  <mat-expansion-panel *ngFor="let noticia of noticias">
+    <mat-action-row>
+        <button mat-button color="primary">EDIT</button>
+        <button mat-button color="warning">DELETE</button>
+    </mat-action-row>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+          <p>{{ noticia.title[0].value }}</p>
+      </mat-panel-title>
+      <mat-panel-description>
+          <!--{{ post.description }}-->
+          <button class="userButton" mat-button><mat-icon>account_circle</mat-icon></button>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+        <!--<p>{{ post.body }}</p>-->
+  </mat-expansion-panel>
+</mat-accordion>
+<h3 class="info-text mat-body-1" *ngIf="noticias.length <= 0">No noticias added yet</h3>

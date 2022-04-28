@@ -17,10 +17,17 @@ export class NoticiasService {
         const testPostRequest = this.http.get<Noticia[]>("http://elhuyar.desarrollo.com/eu/api/noticias?_format=json")
         testPostRequest.subscribe(data => {
             this.noticias = data
+            console.log(data)
             this.noticiasUpdated.next(data)
         })
         // We use the spread operator to make a copy of posts instead of passing the reference
         // so it won't be affected on modifications
         return [...this.noticias]
     }
+
+
+    getNoticiasUpdateListener() {
+        return this.noticiasUpdated.asObservable()
+    }
+
 }
