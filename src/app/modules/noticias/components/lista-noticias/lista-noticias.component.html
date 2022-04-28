@@ -9,10 +9,11 @@
           <p>{{ noticia | title }}</p>
       </mat-panel-title>
       <mat-panel-description>
-          <!--{{ post.description }}-->
+          <!--{{ noticia | body }}-->
           <button class="userButton" mat-button><mat-icon>account_circle</mat-icon></button>
       </mat-panel-description>
     </mat-expansion-panel-header>
+          {{ noticia | body }}
         <!--<p>{{ post.body }}</p>-->
   </mat-expansion-panel>
 </mat-accordion>
