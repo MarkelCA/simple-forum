@@ -8,6 +8,7 @@ import {MaterialModule} from '../modules/material/material.module';
 import {PostsModule} from "../modules/posts/posts.module";
 import {NoticiasModule} from '../modules/noticias/noticias.module';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from '../pages/home/home.component';
 
 
 
@@ -15,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     HeaderComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
