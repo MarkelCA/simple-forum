@@ -1,6 +1,8 @@
+import {Array} from "src/app/root/array.model";
+
 export interface Noticia {
-    nid         : [object]
-    title       : [object]
-    created     : [object]
-    body        : [object]
+    nid         : Array
+    title       : Array
+    created     : Array
+    body        : Array
 }
