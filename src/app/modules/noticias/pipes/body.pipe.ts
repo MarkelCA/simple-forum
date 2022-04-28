@@ -7,7 +7,7 @@ import {Noticia} from '../noticias.model';
 export class BodyPipe implements PipeTransform {
 
   transform(noticia: Noticia): string {
-    return noticia.body[0].value;
+    return noticia?.body[0]?.value;
   }
 
 }

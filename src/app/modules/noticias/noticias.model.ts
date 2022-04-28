@@ -1,4 +1,4 @@
-import {Array} from "src/app/root/array.model";
+import {Array} from "src/app/root/model/array.model";
 
 export interface Noticia {
     nid         : Array

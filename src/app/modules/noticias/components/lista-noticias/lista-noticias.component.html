@@ -13,8 +13,7 @@
           <button class="userButton" mat-button><mat-icon>account_circle</mat-icon></button>
       </mat-panel-description>
     </mat-expansion-panel-header>
-          {{ noticia | body }}
-        <!--<p>{{ post.body }}</p>-->
+    <div class="noticia-body" [innerHTML]=" noticia | body "></div>
   </mat-expansion-panel>
 </mat-accordion>
 <h3 class="info-text mat-body-1" *ngIf="noticias.length <= 0">No noticias added yet</h3>
