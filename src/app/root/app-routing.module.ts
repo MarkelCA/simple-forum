@@ -5,6 +5,10 @@ import {RouterModule, Routes} from '@angular/router';
 
 const routes : Routes = [
     {
+        path: 'posts',
+        loadChildren: () => import('../modules/posts/posts.module').then(m => m.PostsModule)
+    },
+    {
         path: 'noticias',
         loadChildren: () => import('../modules/noticias/noticias.module').then(m => m.NoticiasModule)
     },

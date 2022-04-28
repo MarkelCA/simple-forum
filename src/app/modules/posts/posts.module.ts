@@ -5,12 +5,15 @@ import {MaterialModule} from "../material/material.module";
 import { FormsModule } from '@angular/forms';
 import {CommonModule} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
+import { HomeComponent } from './components/home/home.component';
+import { PostsRoutingModule } from './posts-routing.module';
 
 
 @NgModule({
   declarations : [
     PostCreateComponent,
-    PostListComponent
+    PostListComponent,
+    HomeComponent
   ],
   exports : [
     PostCreateComponent,
@@ -20,7 +23,8 @@ import {HttpClientModule} from "@angular/common/http";
     MaterialModule,
     FormsModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    PostsRoutingModule
   ]
 })
 export class PostsModule {}
