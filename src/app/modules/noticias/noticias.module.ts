@@ -4,17 +4,21 @@ import {ListaNoticiasComponent} from './components/lista-noticias/lista-noticias
 import {MaterialModule} from '../material/material.module';
 import { TitlePipe } from './pipes/title.pipe';
 import { BodyPipe } from './pipes/body.pipe';
+import { NoticiasRoutingModule } from './noticias-routing.module';
+import {HomeComponent} from './pages/home/home.component';
 
 
 @NgModule({
   declarations: [
+      HomeComponent,
       ListaNoticiasComponent,
       TitlePipe,
       BodyPipe
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    NoticiasRoutingModule
   ],
   exports : [
       ListaNoticiasComponent
