@@ -7,6 +7,7 @@ import { HeaderComponent } from '../components/header/header.component'
 import {MaterialModule} from '../modules/material/material.module';
 import {PostsModule} from "../modules/posts/posts.module";
 import {NoticiasModule} from '../modules/noticias/noticias.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -20,7 +21,8 @@ import {NoticiasModule} from '../modules/noticias/noticias.module';
     BrowserAnimationsModule,
     MaterialModule,
     PostsModule,
-    NoticiasModule
+    NoticiasModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
